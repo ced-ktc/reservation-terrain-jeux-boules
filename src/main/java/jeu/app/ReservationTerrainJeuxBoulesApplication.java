@@ -20,7 +20,7 @@ public class ReservationTerrainJeuxBoulesApplication {
     public static void main(String[] args) {
         SpringApplication.run(ReservationTerrainJeuxBoulesApplication.class, args);
     }
-
+//To mocking data to the test database for test
 //    @Bean
 //    CommandLineRunner startRunner(JoueurRepository joueurRepository, TerrainRepository terrainRepository, ReservationRepository reservationRepository, AccountServiceImpl accountService) {
 //        return args -> {
@@ -38,17 +38,17 @@ public class ReservationTerrainJeuxBoulesApplication {
 //            joueurs.add(joueur5);
 //            joueurRepository.saveAll(joueurs);
 
-//            Terrain terrainNaturel = new TerrainExterieurNaturel(null, "naturel", true);
-//            Terrain terrainBitume = new TerrainInterneBitume(null, "bitume", false);
-//            Terrain terrainHerbe = new TerrainExterieurHerbe(null, "herbe", true);
+//            Terrain terrainNaturel = new TerrainExterieurNaturel(1, "naturel", true);
+//            Terrain terrainBitume = new TerrainInterneBitume(2, "bitume", false);
+//            Terrain terrainHerbe = new TerrainExterieurHerbe(3, "herbe", true);
 //            List<Terrain> terrains = new ArrayList<>();
 //            terrains.add(terrainBitume);
 //            terrains.add(terrainHerbe);
 //            terrains.add(terrainNaturel);
 //            terrainRepository.saveAll(terrains);
 //
-//            Reservation reservation1 = accountService.saveReservation("Ced", new Reservation(null, 1, terrainBitume, joueurs));
-//            Reservation reservation2 = accountService.saveReservation("Ced1", new Reservation("resa_123", 4, terrainBitume, joueurs));
+//            Reservation reservation1 = accountService.saveReservation(1,"Ced", new Reservation("ref_resa1", 5));
+//            Reservation reservation2 = accountService.saveReservation(2,"Ced1", new Reservation("ref_resa2", 4));
 //            reservationRepository.save(reservation1);
 //        };
 //    }
